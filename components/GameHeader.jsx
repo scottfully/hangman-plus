@@ -1,15 +1,21 @@
+import { gameConfig } from "../config.js"
+
 export default function GameHeader({ totalGuesses, lastGuessName }) {
   const styles = {
     backgroundColor: "black",
     color: "white",
   }
+  
+  // Replace placeholders in the description with actual values
+  const description = gameConfig.description
+    .replace("{totalGuesses}", totalGuesses)
+    .replace("{lastGuessName}", lastGuessName)
+  
   return (
     <header>
-      <h1>Save the tasty dishes</h1>
+      <h1>{gameConfig.title}</h1>
       <p>
-        Guess the word within {totalGuesses} attempts to keep the tasty
-        malaysian dishes safe, guess them wrong and you are left with only{" "}
-        {lastGuessName} 🍚
+        {description}
       </p>
     </header>
   )

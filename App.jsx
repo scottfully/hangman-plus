@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { clsx } from "clsx"
-import { options } from "./options"
+import { options } from "./config"
 import { getRandomWord } from "./utils"
 import Confetti from "react-confetti"
 import LanguageChips from "./components/LanguageChips"
