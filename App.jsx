@@ -10,11 +10,9 @@ import LetterGuesses from "./components/LetterGuesses"
 import Keyboard from "./components/Keyboard"
 
 export default function AssemblyEndgame() {
-  // State values
   const [currentWord, setCurrentWord] = useState(() => getRandomWord())
   const [guessedLetters, setGuessedLetters] = useState([])
 
-  // Derived values
   const numGuessesLeft = options.length - 1
   const wrongGuessCount = guessedLetters.filter(
     (letter) => !currentWord.includes(letter),

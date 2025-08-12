@@ -30,9 +30,7 @@ export default function GameStatus({
       return (
         <>
           <h2>Game over!</h2>
-          <p>
-            You lose! Only {options[options.length - 1].name} for you 😭
-          </p>
+          <p>You lose! Only {options[options.length - 1].name} for you 😭</p>
         </>
       )
     }

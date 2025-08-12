@@ -1,6 +1,7 @@
 export const gameConfig = {
   title: "Save the tasty dishes",
-  description: "Guess the word within {totalGuesses} attempts to keep the tasty malaysian dishes safe, guess them wrong and you are left with only {lastGuessName}"
+  description:
+    "Guess the word within {totalGuesses} attempts to keep the tasty malaysian dishes safe, guess them wrong and you are left with only {lastGuessName}",
 }
 
 export const options = [
