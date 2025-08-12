@@ -3,7 +3,7 @@ import { clsx } from "clsx"
 import { options } from "./config"
 import { getRandomWord } from "./utils"
 import Confetti from "react-confetti"
-import LanguageChips from "./components/LanguageChips"
+import OptionChips from "./components/OptionChips"
 import GameHeader from "./components/GameHeader"
 import GameStatus from "./components/GameStatus"
 import LetterGuesses from "./components/LetterGuesses"
@@ -53,7 +53,7 @@ export default function AssemblyEndgame() {
         wrongGuessCount={wrongGuessCount}
         isLastGuessIncorrect={isLastGuessIncorrect}
       />
-      <LanguageChips options={options} wrongGuessCount={wrongGuessCount} />
+      <OptionChips options={options} wrongGuessCount={wrongGuessCount} />
       <LetterGuesses
         isGameLost={isGameLost}
         guessedLetters={guessedLetters}

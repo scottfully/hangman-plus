@@ -22,7 +22,7 @@ export default function GameStatus({
       return (
         <>
           <h2>You win!</h2>
-          <p>Well done! Enjoy your tasty dishes 🎉</p>
+          <p>Well done 🎉</p>
         </>
       )
     }

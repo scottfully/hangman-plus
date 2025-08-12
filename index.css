@@ -73,7 +73,7 @@ section.game-status > h2 {
   margin: 5px;
 }
 
-section.language-chips {
+section.option-chips {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
@@ -88,7 +88,7 @@ span.chip {
   position: relative;
 }
 
-/* Dimmed overlay with skull on "lost" options */
+/* Dimmed overlay with skull on "lost" option */
 span.chip.lost::before {
   content: "\1F480";
   /* content: "💀"; */
