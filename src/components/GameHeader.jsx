@@ -1,4 +1,4 @@
-import { gameConfig } from "../config.js"
+import { gameConfig } from "../data/config.js"
 
 export default function GameHeader({ totalGuesses, lastGuessName }) {
   // Replace totalGuesses and lastGuessName placeholders in the description with actual values

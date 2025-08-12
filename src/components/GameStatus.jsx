@@ -1,5 +1,5 @@
 import { clsx } from "clsx"
-import { getFarewellText } from "../utils"
+import { getFarewellText } from "../utils/utils"
 
 export default function GameStatus({
   isGameOver,
