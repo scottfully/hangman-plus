@@ -1,6 +1,6 @@
 {
-  "name": "Scrim-s06j0u5",
-  "description": "https://scrimba.com/learn-react-c0e/~04n7/s0jt9lao48/head",
+  "name": "Hangman+",
+  "description": "Guess the word before we are left with the only one last option",
   "scripts": {
     "start": "vite",
     "dev": "vite",
