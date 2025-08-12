@@ -8,9 +8,9 @@
 
 ## 🌐 Live Demo
 
-**🚀 <a href="#" target="_blank">Play Hangman Plus Now</a>** - Can you guess the word in time?
+**🚀 <a href="https://hangman-plus.vercel.app" target="_blank">Play Hangman Plus Now</a>** - Can you guess the word in time?
 
-<a href="#" target="_blank"><img src="https://img.shields.io/badge/🔗_Live_Demo-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo" /></a>
+<a href="https://hangman-plus.vercel.app" target="_blank"><img src="https://img.shields.io/badge/🔗_Live_Demo-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Live Demo" /></a>
 
 ## ✨ Features
 
