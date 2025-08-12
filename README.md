@@ -77,6 +77,16 @@ npm run preview  # Preview production build
 npm start        # Start development server (alias)
 ```
 
+## 🛠️ Customizing the Game
+
+You can easily customize the game to fit your own theme, options, and messages. All main settings are found in [`src/data/config.js`](src/data/config.js):
+
+- **Game Title & Description**: Change the `title` and `description` in the `gameConfig` object to set your own game name and instructions. You can use placeholders like `{totalGuesses}` and `{lastGuessName}` in the description for dynamic values.
+
+- **Options (Lives/Chances)**: Edit the `options` array to add, remove, or rename the options (e.g., dishes, items, characters) that represent the player's lives. Each option can have its own `name`, `backgroundColor`, and `color` for full visual customization.
+
+After saving your changes, restart the development server if it's running to see your customizations in action!
+
 ## 🎨 Styling
 
 The game features:
