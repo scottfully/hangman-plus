@@ -1,4 +1,4 @@
-export const languages = [
+export const options = [
   {
     name: "Rendang",
     backgroundColor: "#E2680F",

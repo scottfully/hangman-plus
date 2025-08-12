@@ -88,7 +88,7 @@ span.chip {
   position: relative;
 }
 
-/* Dimmed overlay with skull on "lost" languages */
+/* Dimmed overlay with skull on "lost" options */
 span.chip.lost::before {
   content: "\1F480";
   /* content: "💀"; */

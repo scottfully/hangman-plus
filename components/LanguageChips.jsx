@@ -1,7 +1,7 @@
 import { clsx } from "clsx"
 
-export default function LanguageChips({ languages, wrongGuessCount }) {
-  const languageElements = languages.map((lang, index) => {
+export default function LanguageChips({ options, wrongGuessCount }) {
+  const languageElements = options.map((lang, index) => {
     const isLanguageLost = index < wrongGuessCount
     const styles = {
       backgroundColor: lang.backgroundColor,

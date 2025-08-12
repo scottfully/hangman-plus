@@ -5,7 +5,7 @@ export default function GameStatus({
   isGameOver,
   isGameWon,
   isGameLost,
-  languages,
+  options,
   wrongGuessCount,
   isLastGuessIncorrect,
 }) {
@@ -13,7 +13,7 @@ export default function GameStatus({
     if (!isGameOver && isLastGuessIncorrect) {
       return (
         <p className="farewell-message">
-          {getFarewellText(languages[wrongGuessCount - 1].name)}
+          {getFarewellText(options[wrongGuessCount - 1].name)}
         </p>
       )
     }
@@ -31,7 +31,7 @@ export default function GameStatus({
         <>
           <h2>Game over!</h2>
           <p>
-            You lose! Only {languages[languages.length - 1].name} for you 😭
+            You lose! Only {options[options.length - 1].name} for you 😭
           </p>
         </>
       )

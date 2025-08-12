@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { clsx } from "clsx"
-import { languages } from "./languages"
+import { options } from "./options"
 import { getRandomWord } from "./utils"
 import Confetti from "react-confetti"
 import LanguageChips from "./components/LanguageChips"
@@ -15,7 +15,7 @@ export default function AssemblyEndgame() {
   const [guessedLetters, setGuessedLetters] = useState([])
 
   // Derived values
-  const numGuessesLeft = languages.length - 1
+  const numGuessesLeft = options.length - 1
   const wrongGuessCount = guessedLetters.filter(
     (letter) => !currentWord.includes(letter),
   ).length
@@ -27,8 +27,8 @@ export default function AssemblyEndgame() {
   const lastGuessedLetter = guessedLetters[guessedLetters.length - 1]
   const isLastGuessIncorrect =
     lastGuessedLetter && !currentWord.includes(lastGuessedLetter)
-  const totalGuesses = languages.length - 1
-  const lastGuessName = languages[languages.length - 1].name
+  const totalGuesses = options.length - 1
+  const lastGuessName = options[options.length - 1].name
 
   function addGuessedLetter(letter) {
     setGuessedLetters((prevLetters) =>
@@ -49,11 +49,11 @@ export default function AssemblyEndgame() {
         isGameOver={isGameOver}
         isGameWon={isGameWon}
         isGameLost={isGameLost}
-        languages={languages}
+        options={options}
         wrongGuessCount={wrongGuessCount}
         isLastGuessIncorrect={isLastGuessIncorrect}
       />
-      <LanguageChips languages={languages} wrongGuessCount={wrongGuessCount} />
+      <LanguageChips options={options} wrongGuessCount={wrongGuessCount} />
       <LetterGuesses
         isGameLost={isGameLost}
         guessedLetters={guessedLetters}
